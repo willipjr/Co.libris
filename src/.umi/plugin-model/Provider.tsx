@@ -1,13 +1,13 @@
 // @ts-nocheck
 import React from 'react';
-import initialState from 'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/.umi/plugin-initial-state/models/initialState';
+import initialState from 'C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/.umi/plugin-initial-state/models/initialState';
 
 // @ts-ignore
-import Dispatcher from 'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/@umijs/plugin-model/lib/helpers/dispatcher';
+import Dispatcher from 'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/@umijs/plugin-model/lib/helpers/dispatcher';
 // @ts-ignore
-import Executor from 'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/@umijs/plugin-model/lib/helpers/executor';
+import Executor from 'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/@umijs/plugin-model/lib/helpers/executor';
 // @ts-ignore
-import { UmiContext } from 'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/@umijs/plugin-model/lib/helpers/constant';
+import { UmiContext } from 'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/@umijs/plugin-model/lib/helpers/constant';
 
 export const models = { '@@initialState': initialState,  };
 

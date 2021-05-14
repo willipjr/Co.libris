@@ -5,8 +5,8 @@ import '../global.tsx';
 import { plugin } from './core/plugin';
 import './core/pluginRegister';
 import { createHistory } from './core/history';
-import { ApplyPluginsType } from 'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/umi/node_modules/@umijs/runtime';
-import { renderClient } from 'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/umi/node_modules/@umijs/renderer-react/dist/index.js';
+import { ApplyPluginsType } from 'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/umi/node_modules/@umijs/runtime';
+import { renderClient } from 'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/umi/node_modules/@umijs/renderer-react/dist/index.js';
 import { getRoutes } from './core/routes';
 
 

@@ -3,11 +3,11 @@ import {
   createIntl,
   IntlShape,
   MessageDescriptor,
-} from 'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/react-intl';
+} from 'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/react-intl';
 import { ApplyPluginsType } from 'umi';
 import { event, LANG_CHANGE_EVENT } from './locale';
 // @ts-ignore
-import warning from 'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/warning/warning.js';
+import warning from 'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/warning/warning.js';
 
 import { plugin } from '../core/plugin';
 
@@ -34,7 +34,7 @@ export {
   defineMessages,
   injectIntl,
   useIntl,
-} from 'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/react-intl';
+} from 'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/react-intl';
 
 let g_intl: IntlShape;
 
@@ -43,7 +43,7 @@ const useLocalStorage = true;
 export const localeInfo: {[key: string]: any} = {
   'en-US': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/locales/en-US.ts')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/locales/en-US.ts')),
     },
     locale: 'en-US',
     antd: {
@@ -53,7 +53,7 @@ export const localeInfo: {[key: string]: any} = {
   },
   'fa-IR': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/locales/fa-IR.ts')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/locales/fa-IR.ts')),
     },
     locale: 'fa-IR',
     antd: {
@@ -63,7 +63,7 @@ export const localeInfo: {[key: string]: any} = {
   },
   'id-ID': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/locales/id-ID.ts')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/locales/id-ID.ts')),
     },
     locale: 'id-ID',
     antd: {
@@ -73,7 +73,7 @@ export const localeInfo: {[key: string]: any} = {
   },
   'ja-JP': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/locales/ja-JP.ts')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/locales/ja-JP.ts')),
     },
     locale: 'ja-JP',
     antd: {
@@ -83,7 +83,7 @@ export const localeInfo: {[key: string]: any} = {
   },
   'pt-BR': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/locales/pt-BR.ts')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/locales/pt-BR.ts')),
     },
     locale: 'pt-BR',
     antd: {
@@ -93,7 +93,7 @@ export const localeInfo: {[key: string]: any} = {
   },
   'zh-CN': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/locales/zh-CN.ts')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/locales/zh-CN.ts')),
     },
     locale: 'zh-CN',
     antd: {
@@ -103,7 +103,7 @@ export const localeInfo: {[key: string]: any} = {
   },
   'zh-TW': {
     messages: {
-      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/locales/zh-TW.ts')),
+      ...((locale) => locale.__esModule ? locale.default : locale)(require('C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/locales/zh-TW.ts')),
     },
     locale: 'zh-TW',
     antd: {

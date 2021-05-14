@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType, dynamic } from 'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/umi/node_modules/@umijs/runtime';
+import { ApplyPluginsType, dynamic } from 'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/umi/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 import LoadingComponent from '@ant-design/pro-layout/es/PageLoading';
@@ -9,20 +9,20 @@ export function getRoutes() {
   const routes = [
   {
     "path": "/umi/plugin/openapi",
-    "component": dynamic({ loader: () => import(/* webpackChunkName: '.umi__plugin-openapi__openapi' */'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/.umi/plugin-openapi/openapi.tsx'), loading: LoadingComponent})
+    "component": dynamic({ loader: () => import(/* webpackChunkName: '.umi__plugin-openapi__openapi' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/.umi/plugin-openapi/openapi.tsx'), loading: LoadingComponent})
   },
   {
     "path": "/",
-    "component": dynamic({ loader: () => import(/* webpackChunkName: '.umi__plugin-layout__Layout' */'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/.umi/plugin-layout/Layout.tsx'), loading: LoadingComponent}),
+    "component": dynamic({ loader: () => import(/* webpackChunkName: '.umi__plugin-layout__Layout' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/.umi/plugin-layout/Layout.tsx'), loading: LoadingComponent}),
     "routes": [
       {
         "path": "/~demos/:uuid",
         "layout": false,
-        "wrappers": [dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/@umijs/preset-dumi/lib/theme/layout'), loading: LoadingComponent})],
+        "wrappers": [dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/@umijs/preset-dumi/lib/theme/layout'), loading: LoadingComponent})],
         "component": (props) => React.createElement(
         dynamic({
           loader: async () => {
-            const { default: getDemoRenderArgs } = await import(/* webpackChunkName: 'dumi_demos' */ 'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
+            const { default: getDemoRenderArgs } = await import(/* webpackChunkName: 'dumi_demos' */ 'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/@umijs/preset-dumi/lib/plugins/features/demo/getDemoRenderArgs');
             const { default: Previewer } = await import(/* webpackChunkName: 'dumi_demos' */ 'dumi-theme-default/src/builtins/Previewer.tsx');
             const { default: demos } = await import(/* webpackChunkName: 'dumi_demos' */ '@@/dumi/demos');
             const { usePrefersColor } = await import(/* webpackChunkName: 'dumi_demos' */ 'dumi/theme');
@@ -63,26 +63,26 @@ export function getRoutes() {
         "__dumiRoot": true,
         "layout": false,
         "path": "/~docs",
-        "wrappers": [dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/@umijs/preset-dumi/lib/theme/layout'), loading: LoadingComponent}), dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/dumi-theme-default/src/layout.tsx'), loading: LoadingComponent})],
+        "wrappers": [dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/@umijs/preset-dumi/lib/theme/layout'), loading: LoadingComponent}), dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/dumi-theme-default/src/layout.tsx'), loading: LoadingComponent})],
         "routes": [
           {
             "path": "/~docs",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'README.md' */'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/README.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'README.md' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/README.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "locale": "en-US",
-              "title": "Ant Design Pro",
+              "title": "Co.libris",
               "order": null
             },
-            "title": "Ant Design Pro"
+            "title": "Co.libris"
           },
           {
             "path": "/~docs/components",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__index.md' */'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/components/index.md'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__index.md' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/components/index.md'), loading: LoadingComponent}),
             "exact": true,
             "meta": {
               "filePath": "src/components/index.md",
-              "updatedTime": 1620433253868,
+              "updatedTime": 1620912117000,
               "title": "业务组件",
               "sidemenu": false,
               "slugs": [
@@ -158,7 +158,7 @@ export function getRoutes() {
               {
                 "name": "login",
                 "path": "/user/login",
-                "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__user__Login' */'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/pages/user/Login'), loading: LoadingComponent}),
+                "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__user__Login' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/pages/user/Login'), loading: LoadingComponent}),
                 "exact": true
               }
             ]
@@ -169,7 +169,7 @@ export function getRoutes() {
         "path": "/welcome",
         "name": "welcome",
         "icon": "smile",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__Welcome' */'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/pages/Welcome'), loading: LoadingComponent}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__Welcome' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/pages/Welcome'), loading: LoadingComponent}),
         "exact": true
       },
       {
@@ -181,14 +181,14 @@ export function getRoutes() {
             "path": "/components/button",
             "name": "Button",
             "access": "canAdmin",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__Components__Button' */'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/pages/Components/Button'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__Components__Button' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/pages/Components/Button'), loading: LoadingComponent}),
             "exact": true
           },
           {
             "path": "/components/typography",
             "name": "Typography",
             "access": "canAdmin",
-            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__Components__Typography' */'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/pages/Components/Typography'), loading: LoadingComponent}),
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__Components__Typography' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/pages/Components/Typography'), loading: LoadingComponent}),
             "exact": true
           }
         ]
@@ -197,7 +197,7 @@ export function getRoutes() {
         "name": "list.table-list",
         "icon": "table",
         "path": "/list",
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__TableList' */'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/pages/TableList'), loading: LoadingComponent}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__TableList' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/pages/TableList'), loading: LoadingComponent}),
         "exact": true
       },
       {
@@ -206,7 +206,7 @@ export function getRoutes() {
         "exact": true
       },
       {
-        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__404' */'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/src/pages/404'), loading: LoadingComponent}),
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__404' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/pages/404'), loading: LoadingComponent}),
         "exact": true
       }
     ]

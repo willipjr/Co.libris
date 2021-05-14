@@ -18,21 +18,29 @@ export default (): React.ReactNode => {
                 xl={{ span: 18, offset: 2 }}
                 lg={{ span: 20, offset: 1 }}
             >
-                <Row>
-                    <Badge status='processing' text={<Text className='stage-text' >Em parecer técnico . Há 2 dias aguardando avaliação</Text>} />
+                <Row style={{ marginBottom: '40px' }} >
+                    <Badge
+                        status='processing'
+                        text={
+                            <span>
+                                <Text className='stage-text' strong >Em parecer técnico</Text>
+                                <Text className='status-text' > . Há 2 dias aguardando avaliação</Text>
+                            </span>
+                        }
+                    />
                 </Row>
-                <Row>
+                <Row style={{ marginBottom: '32px' }} >
                     <Col>
                         <Title style={{ color: '#fff' }} level={4}>Belchior Monteiro Lima Neto</Title>
                         <Title style={{ color: '#fff', marginTop: '0' }} level={2}>Bandidos e elites citadinas na África Romana</Title>
                         <Paragraph className='book-subtitle'>Um estudo sobre a formação de estigmas com base nas Metamorphoses de Apuleio de Madaura (século II)</Paragraph>
                     </Col>
                 </Row>
-                <Row>
-                    <Button type='primary' size='large' icon={<DocumentView24 style={{ marginRight: '8px' }} />} >Avaliar as correções enviadas</Button>
+                <Row style={{ marginBottom: '64px' }}  >
+                    <Button type='primary' size='large' icon={<DocumentView24 />} >Avaliar correções enviadas</Button>
                 </Row>
                 <Row>
-                    <Tabs type="card" >
+                    <Tabs type="card" animated={{ inkBar: true, tabPane: true }} >
                         <TabPane tab={
                             <span className='tabpane-span' >
                                 <Time24 className='tabpane-span-icon' />

@@ -1,3 +1,3 @@
 // @ts-nocheck
 // @ts-ignore
-export { Helmet } from 'C:/Users/willi/OneDrive/Área de Trabalho/ant-design-pro/node_modules/react-helmet';
+export { Helmet } from 'C:/Users/willi/OneDrive/Documentos/Github/co.libris/node_modules/react-helmet';

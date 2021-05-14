@@ -43,9 +43,9 @@ export default defineConfig({
     'select-item-selected-font-weight': '700',
     'typography-title-font-weight': '400',
     'border-radius-base': '0',
-    'height-base': '40px',
-    'height-lg': '48px',
-    'height-sm': '32px',
+    'height-base': '48px',
+    'height-lg': '56px',
+    'height-sm': '40px',
     'btn-font-size-lg': '16px'
   },
   // esbuild is father build tools
