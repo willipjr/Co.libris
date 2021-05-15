@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Typography, Badge, Button, Tabs } from 'antd';
+import { Row, Col, Typography, Badge, Button, Tabs, Radio } from 'antd';
 import { Time24, Data_224, Folders24, DocumentView24 } from '@carbon/icons-react';
 
 import './index.less';
@@ -9,14 +9,16 @@ export default (): React.ReactNode => {
     const { Text, Title, Paragraph } = Typography;
     const { TabPane } = Tabs;
 
+    const plainOptions = ['Histórico', 'Informações', 'Arquivos']
+
     return (
 
         <Row className='component-wrapper' >
             <Col
                 className='content-column'
-                xxl={{ span: 16, offset: 3 }}
-                xl={{ span: 18, offset: 2 }}
-                lg={{ span: 20, offset: 1 }}
+                xxl={{ offset: 3 }}
+                xl={{ offset: 2 }}
+                lg={{ offset: 1 }}
             >
                 <Row style={{ marginBottom: '40px' }} >
                     <Badge
@@ -29,7 +31,7 @@ export default (): React.ReactNode => {
                         }
                     />
                 </Row>
-                <Row style={{ marginBottom: '32px' }} >
+                <Row style={{ marginBottom: '32px', maxWidth: '768px' }} >
                     <Col>
                         <Title style={{ color: '#fff' }} level={4}>Belchior Monteiro Lima Neto</Title>
                         <Title style={{ color: '#fff', marginTop: '0' }} level={2}>Bandidos e elites citadinas na África Romana</Title>
@@ -40,7 +42,7 @@ export default (): React.ReactNode => {
                     <Button type='primary' size='large' icon={<DocumentView24 />} >Avaliar correções enviadas</Button>
                 </Row>
                 <Row>
-                    <Tabs type="card" animated={{ inkBar: true, tabPane: true }} >
+                    <Tabs type="card" >
                         <TabPane tab={
                             <span className='tabpane-span' >
                                 <Time24 className='tabpane-span-icon' />

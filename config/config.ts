@@ -17,13 +17,13 @@ export default defineConfig({
   layout: {
     // https://umijs.org/zh-CN/plugins/plugin-layout
     locale: true,
-    siderWidth: 208,
+    siderWidth: 256,
     ...defaultSettings,
   },
   // https://umijs.org/zh-CN/plugins/plugin-locale
   locale: {
     // default zh-CN
-    default: 'zh-CN',
+    default: 'pt-BR',
     antd: true,
     // default true, when it is true, will use `navigator.language` overwrite default
     baseNavigator: true,
@@ -39,6 +39,8 @@ export default defineConfig({
   // Theme for antd: https://ant.design/docs/react/customize-theme-cn
   theme: {
     'primary-color': defaultSettings.primaryColor,
+    'background-color-base': '#f5f5f5',
+    'layout-body-background': '#f5f5f5',
     'font-size-base': '16px',
     'select-item-selected-font-weight': '700',
     'typography-title-font-weight': '400',
@@ -46,7 +48,9 @@ export default defineConfig({
     'height-base': '48px',
     'height-lg': '56px',
     'height-sm': '40px',
-    'btn-font-size-lg': '16px'
+    'btn-font-size-lg': '16px',
+    'tabs-card-height': '56px',
+    'tabs-card-head-background': '#bfbfbf'
   },
   // esbuild is father build tools
   // https://umijs.org/plugins/plugin-esbuild
