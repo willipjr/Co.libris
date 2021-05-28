@@ -1,0 +1,69 @@
+@import '~antd/lib/style/themes/default.less';
+
+
+
+#book-card-wrapper {
+    width: 22rem;
+    height: 20.5rem;
+}
+
+#book-card-header {
+    width: 100%;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+#book-card-body {
+    height: 13.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+}
+
+#book-card-center-row {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: auto;
+}
+
+#book-card-bottom-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#book-card-status-icon {
+    margin-right: 1rem;
+    color: @primary-color;
+}
+
+#book-card-status-text {
+    color: #8c8c8c;
+}
+
+#book-card-authorship-text {
+    color: #8c8c8c;
+}
+
+#book-card-checkabletags-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card-checkabletag {
+    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+    margin: 0 0 0.5rem 0;
+    border-width: 1px;
+    border-color: #8c8c8c;
+}
+
+.book-card-checkabletag:hover {
+    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+    margin: 0 0 0.5rem 0;
+    border-width: 1px;
+    border-color: @primary-color;
+}
+
+.ant-tag.ant-tag-checkable.ant-tag-checkable-checked.book-card-checkabletag {
+    border-color: #fff;
+}

@@ -173,6 +173,13 @@ export function getRoutes() {
         "exact": true
       },
       {
+        "path": "/editorial-workflow",
+        "name": "Fluxo editorial",
+        "icon": "smile",
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__EditorialWorkflows' */'C:/Users/willi/OneDrive/Documentos/Github/co.libris/src/pages/EditorialWorkflows'), loading: LoadingComponent}),
+        "exact": true
+      },
+      {
         "path": "/components",
         "name": "Components",
         "icon": "",

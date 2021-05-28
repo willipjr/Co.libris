@@ -13,7 +13,7 @@ export default (): React.ReactNode => {
 
     return (
 
-        <Row className='component-wrapper' >
+        <Row className='page-header-wrapper' >
             <Col
                 className='content-column'
                 xxl={{ offset: 3 }}

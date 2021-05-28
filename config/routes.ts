@@ -21,7 +21,12 @@
     icon: 'smile',
     component: './Welcome',
   },
-
+  {
+    path: '/editorial-workflow',
+    name: 'Fluxo editorial',
+    icon: 'smile',
+    component: './EditorialWorkflows',
+  },
   {
     path: '/components',
     name: 'Components',
