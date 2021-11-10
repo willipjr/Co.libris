@@ -1,6 +1,6 @@
-import { Tag, Space } from 'antd';
-import { QuestionCircleOutlined } from '@ant-design/icons';
 import React from 'react';
+import { Tag, Space } from 'antd';
+import { Book32, Switcher32 } from '@carbon/icons-react';
 import { useModel, SelectLang } from 'umi';
 import Avatar from './AvatarDropdown';
 import HeaderSearch from '../HeaderSearch';
@@ -55,10 +55,10 @@ const GlobalHeaderRight: React.FC = () => {
       <span
         className={styles.action}
         onClick={() => {
-          window.open('https://pro.ant.design/docs/getting-started');
+          window.open('https://pt.wikipedia.com');
         }}
       >
-        <QuestionCircleOutlined />
+        <Book32 />
       </span>
       <Avatar />
       {REACT_APP_ENV && (
@@ -67,6 +67,14 @@ const GlobalHeaderRight: React.FC = () => {
         </span>
       )}
       {/* <SelectLang className={styles.action} /> */}
+      <span
+        className={styles.action}
+        onClick={() => {
+          window.open('https://pt.wikipedia.com');
+        }}
+      >
+        <Switcher32 />
+      </span>
     </Space>
   );
 };

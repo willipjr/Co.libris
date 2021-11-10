@@ -41,6 +41,7 @@ export default defineConfig({
     'primary-color': defaultSettings.primaryColor,
     'background-color-base': '#f5f5f5',
     'layout-body-background': '#f5f5f5',
+    'menu-item-height': '56px',
     'layout-header-backgrund': '#fff', 
     'font-size-base': '16px',
     'select-item-selected-font-weight': '700',

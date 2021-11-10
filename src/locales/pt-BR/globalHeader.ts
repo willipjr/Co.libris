@@ -16,4 +16,7 @@ export default {
   'component.noticeIcon.empty': 'Sem notificações',
   'component.noticeIcon.loaded': 'Carregado',
   'component.noticeIcon.view-more': 'Veja mais',
+  'component.globalHeader.user.logout': 'Sair',
+  'component.globalHeader.user.settings': 'Configurações',
+  'component.globalHeader.user.myPage': 'Minha página'
 };
