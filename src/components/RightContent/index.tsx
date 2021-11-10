@@ -4,6 +4,7 @@ import { Book32, Switcher32 } from '@carbon/icons-react';
 import { useModel, SelectLang } from 'umi';
 import Avatar from './AvatarDropdown';
 import HeaderSearch from '../HeaderSearch';
+import Notifications from '../NoticeIcon';
 import styles from './index.less';
 
 export type SiderTheme = 'light' | 'dark';
@@ -60,6 +61,7 @@ const GlobalHeaderRight: React.FC = () => {
       >
         <Book32 />
       </span>
+      <Notifications />
       <Avatar />
       {REACT_APP_ENV && (
         <span>

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Tag, message } from 'antd';
 import { groupBy } from 'lodash';
 import moment from 'moment';
-import { useModel } from 'umi';
+import { useModel, useIntl } from 'umi';
 import { getNotices } from '@/services/ant-design-pro/api';
 
 import NoticeIcon from './NoticeIcon';
@@ -75,6 +75,8 @@ const NoticeIconView = () => {
   const { currentUser } = initialState || {};
   const [notices, setNotices] = useState<API.NoticeIconItem[]>([]);
 
+  const intl = useIntl();
+
   useEffect(() => {
     getNotices().then(({ data }) => setNotices(data || []));
   }, []);
@@ -117,15 +119,21 @@ const NoticeIconView = () => {
       onClear={(title: string, key: string) => clearReadState(title, key)}
       loading={false}
       clearText="清空"
-      viewMoreText="查看更多"
-      onViewMore={() => message.info('Click on view more')}
+      viewMoreText={intl.formatMessage({
+        id: 'component.globalHeader.noticeIcon.viewMore',
+        defaultMessage: 'Veja mais'
+      })}
+      onViewMore={() => message.info('Você clicou em "Veja mais"')}
       clearClose
     >
       <NoticeIcon.Tab
         tabKey="notification"
         count={unreadMsg.notification}
         list={noticeData.notification}
-        title="通知"
+        title={intl.formatMessage({
+          id: 'component.globalHeader.noticeIcon.notifications',
+          defaultMessage: 'Notificações'
+        })}
         emptyText="你已查看所有通知"
         showViewMore
       />
@@ -133,13 +141,19 @@ const NoticeIconView = () => {
         tabKey="message"
         count={unreadMsg.message}
         list={noticeData.message}
-        title="消息"
+        title={intl.formatMessage({
+          id: 'component.globalHeader.noticeIcon.messages',
+          defaultMessage: 'Mensagens'
+        })}
         emptyText="您已读完所有消息"
         showViewMore
       />
       <NoticeIcon.Tab
         tabKey="event"
-        title="待办"
+        title={intl.formatMessage({
+          id: 'component.globalHeader.noticeIcon.events',
+          defaultMessage: 'Eventos'
+        })}
         emptyText="你已完成所有待办"
         count={unreadMsg.event}
         list={noticeData.event}
