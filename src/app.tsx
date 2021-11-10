@@ -4,6 +4,7 @@ import { notification } from 'antd';
 import type { RequestConfig, RunTimeLayoutConfig } from 'umi';
 import { getIntl, getLocale, history, Link } from 'umi';
 import RightContent from '@/components/RightContent';
+import OmniSearch from '@/components/OmniSearch';
 import Footer from '@/components/Footer';
 import type { ResponseError } from 'umi-request';
 import { currentUser as queryCurrentUser } from './services/ant-design-pro/api';
@@ -101,6 +102,27 @@ export const request: RequestConfig = {
 export const layout: RunTimeLayoutConfig = ({ initialState }) => {
   return {
     rightContentRender: () => <RightContent />,
+    headerContentRender: () => <OmniSearch 
+      currentUserName={initialState?.currentUser?.name}
+      options={[
+        { label: <a href="https://umijs.org/zh/guide/umi-ui.html">umi ui</a>, value: 'umi ui' },
+        {
+          label: <a href="next.ant.design">Ant Design</a>,
+          value: 'Ant Design',
+        },
+        {
+          label: <a href="https://protable.ant.design/">Pro Table</a>,
+          value: 'Pro Table',
+        },
+        {
+          label: <a href="https://prolayout.ant.design/">Pro Layout</a>,
+          value: 'Pro Layout',
+        },
+      ]}
+      // onSearch={value => {
+      //   console.log('input', value);
+      // }}
+    />,
     disableContentMargin: false,
     waterMarkProps: {
       content: initialState?.currentUser?.name,

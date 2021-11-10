@@ -30,7 +30,7 @@ export default props => {
   }, [initialInfo?.initialState]);
 
   const userConfig = {
-    ...{'name':'ant-design-pro','theme':'PRO','locale':true,'showBreadcrumb':true,'siderWidth':256,'navTheme':'light','primaryColor':'#096dd9','layout':'mix','contentWidth':'Fluid','fixedHeader':false,'fixSiderbar':true,'colorWeak':false,'title':'Ant Design Pro','pwa':false,'logo':'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg','iconfontUrl':''},
+    ...{'name':'ant-design-pro','theme':'PRO','locale':true,'showBreadcrumb':true,'siderWidth':256,'navTheme':'light','headerTheme':'light','primaryColor':'#096dd9','layout':'mix','contentWidth':'Fixed','fixedHeader':false,'fixSiderbar':true,'colorWeak':false,'title':'Co.libris','pwa':false,'logo':'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg','iconfontUrl':''},
     ...runtimeConfig || {}
   };
 
